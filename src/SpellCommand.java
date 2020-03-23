@@ -1,12 +1,18 @@
 
 public class SpellCommand implements Command{
+	private Document doc;
 	
 	public SpellCommand(Document doc) {
-		//TODO
+		this.doc=doc;
 	}
 	
+	@Override
 	public void execute() {
-		//TODO
+		doc.spell();
+	}
+	
+	public String getName() {
+		return "Spell Document";
 	}
 
 }

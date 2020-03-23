@@ -1,12 +1,18 @@
 
 public class SaveCommand implements Command{
+	private Document doc;
 	
 	public SaveCommand(Document doc) {
-		//TODO
+		this.doc=doc;
 	}
 	
+	@Override
 	public void execute() {
-		//TODO
+		doc.save();
+	}
+	
+	public String getName() {
+		return "Save document";
 	}
 
 }

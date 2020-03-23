@@ -1,12 +1,18 @@
 
 public class LoadCommand implements Command{
+	private Document doc;
 	
 	public LoadCommand(Document doc) {
-		//TODO
+		this.doc=doc;
 	}
 	
+	@Override
 	public void execute() {
-		//TODO
+		doc.load();
+	}
+	
+	public String getName() {
+		return "Load Document";
 	}
 
 }

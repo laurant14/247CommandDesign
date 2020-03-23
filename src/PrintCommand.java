@@ -1,12 +1,19 @@
 
 public class PrintCommand implements Command{
 	
+	private Document doc;
+	
 	public PrintCommand(Document doc) {
-		//TODO
+		this.doc=doc;
 	}
 	
+	@Override
 	public void execute() {
-		//TODO
+		doc.print();
+	}
+	
+	public String getName() {
+		return "Print Document";
 	}
 
 }

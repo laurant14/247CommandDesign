@@ -1,24 +1,26 @@
+import java.util.HashMap;
+
 
 public class Document {
 	
 	public Document(String name) {
-		//TODO
+		System.out.println("Documented named " + name + "is created");//This needs to have the document input into it but howwww
 	}
 	
 	public void load() {
-		//TODO
+		System.out.println("document " + name + "is loaded into view");
 	}
 	
 	public void spell() {
-		//TODO
+		System.out.println("document " + doc + "is being chekced for spelling errors");
 	}
 	
 	public void save() {
-		//TODO
+		System.out.println("document " + name + "is being saved");
 	}
 	
 	public void print() {
-		//TODO
+		System.out.println("document " +name + "is being saved");
 	}
 
 }
