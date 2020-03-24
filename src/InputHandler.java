@@ -10,8 +10,6 @@ public class InputHandler {
 	SpellCommand spc=new SpellCommand(doc);
 	PrintCommand pc=new PrintCommand(doc);
 	
-	
-	
 	private HashMap<String, Command> commands=new HashMap<String, Command>();
 	
 	public InputHandler(Document document){
