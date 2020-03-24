@@ -1,3 +1,7 @@
+/**
+ * This class provides a string name for the name of the document that is entered by the user
+ */
+
 public class Document {
 	String name;
 	
