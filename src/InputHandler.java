@@ -1,8 +1,11 @@
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+import java.util.Set;
 
 public class InputHandler {
 	
-	private HashMap<String, command> commands;
+	private HashMap<String, command> commands = new HashMap<String, command>();
 	
 	public InputHandler(Document document){
 		commands.put("load", LoadCommand);
@@ -11,7 +14,7 @@ public class InputHandler {
 		commands.put("print", PrintCommand);
 	}
 	
-	public void inputEntered(String data){//This ain't right lol
+	public void inputEntered(String data){
 		switch(data) {
 		case "load":
 			commands.execute();
