@@ -1,26 +1,25 @@
-
-
 public class Document {
-	Command command;
+	String name;
 	
 	public Document(String name) {
+		this.name = name;
 		System.out.println("Documented named " + name + " is created");
 	}
 	
 	public void load() {
-		System.out.println("document " + command.getName() + " is loaded into view");
+		System.out.println("document " + this.name + " is loaded into view");
 	}
 	
 	public void spell() {
-		System.out.println("document " + command.getName() + " is being chekced for spelling errors");
+		System.out.println("document " + this.name + " is being chekced for spelling errors");
 	}
 	
 	public void save() {
-		System.out.println("document " + command.getName() + " is being saved");
+		System.out.println("document " + this.name + " is being saved");
 	}
 	
 	public void print() {
-		System.out.println("document " +command.getName() + " is being saved");
+		System.out.println("document " + this.name + " is being saved");
 	}
 
 }
