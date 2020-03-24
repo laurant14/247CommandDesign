@@ -1,7 +1,4 @@
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Iterator;
-import java.util.Set;
 
 /**
  * This class creates a Hashmap to store the different commands
@@ -15,7 +12,7 @@ public class InputHandler {
 	SpellCommand spc;
 	PrintCommand pc;
 	
-	private HashMap<String, Command> commands=new HashMap<String, Command>();
+	private HashMap<String, Command> commands = new HashMap<String, Command>();
 	
 	/**
 	 * Default constuctor which creates instances of each command 
