@@ -4,29 +4,36 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class InputHandler {
+	Document doc;
+	LoadCommand lc=new LoadCommand(doc);
+	SaveCommand sc=new SaveCommand(doc);
+	SpellCommand spc=new SpellCommand(doc);
+	PrintCommand pc=new PrintCommand(doc);
 	
-	private HashMap<String, command> commands = new HashMap<String, command>();
+	
+	
+	private HashMap<String, Command> commands=new HashMap<String, Command>();
 	
 	public InputHandler(Document document){
-		commands.put("load", LoadCommand);
-		commands.put("save", SaveCommand);
-		commands.put("spell", SpellCheckCommand);
-		commands.put("print", PrintCommand);
+		commands.put("load", lc);
+		commands.put("save", sc);
+		commands.put("spell", spc);
+		commands.put("print", pc);
 	}
 	
 	public void inputEntered(String data){
 		switch(data) {
 		case "load":
-			commands.execute();
+			lc.execute();
 			break;
 		case "save":
-			commands.execute();
+			sc.execute();
 			break;
 		case "spell":
-			commands.execute();
+			spc.execute();
 			break;
 		case "print":
-			commands.execute();
+			pc.execute();
 			break;
 		}
 			
