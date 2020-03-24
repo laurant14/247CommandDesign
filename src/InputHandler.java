@@ -48,6 +48,11 @@ public class InputHandler {
 		case "print":
 			pc.execute();
 			break;
+		case "quit":
+			System.out.println("Goodbye");
+			break;
+		default:
+			System.out.println("Sorry, we don't recognize that command");	
 		}
 			
 	}
